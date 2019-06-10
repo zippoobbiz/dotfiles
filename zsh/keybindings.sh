@@ -49,11 +49,12 @@
 	# bindkey "^l" ctrl_l
 
 # Enter
-	# function enter_line() {
-	# 	zle accept-line
-	# }
-	# zle -N enter_line
-	# bindkey "^o" enter_line
+	function edit_zshrc_local() {
+		BUFFER="opalias"
+		zle accept-line
+	}
+	zle -N edit_zshrc_local
+	bindkey "^o" edit_zshrc_local
 
 # Sudo
 	# function add_sudo() {
