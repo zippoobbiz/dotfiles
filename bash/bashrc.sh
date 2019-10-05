@@ -90,3 +90,8 @@ alias jn='jupyter notebook'
 
 # pulumi
 alias p='pulumi'
+
+# GCP
+alias g='gcloud'
+
+
