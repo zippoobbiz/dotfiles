@@ -85,3 +85,7 @@ alias p27='conda activate python27'
 alias p36='conda activate python36'
 ## Jupyter Notebook
 alias jn='jupyter notebook'
+
+
+# GCP
+alias g='gcloud'
