@@ -1,11 +1,13 @@
-#. /workspaces/repositories/dotfiles/bash/bashrc.sh
+#. ~/workspaces/repositories/dotfiles/bash/bashrc.sh
 
 # iTerm2
 export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"'
 
 # general
 alias opalias='sub ~/.bash_profile'
+alias opdot='sub ~/workspaces/repositories/dotfiles/bash/bashrc.sh'
 alias realias='. ~/.bash_profile'
+alias redot='. ~/workspaces/repositories/dotfiles/bash/bashrc.sh'
 alias edalias='vim ~/.bash_profile; . ~/.bash_profile;'
 
 ## folders
@@ -85,3 +87,6 @@ alias p27='conda activate python27'
 alias p36='conda activate python36'
 ## Jupyter Notebook
 alias jn='jupyter notebook'
+
+# pulumi
+alias p='pulumi'
