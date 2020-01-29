@@ -51,3 +51,7 @@ vault audit list -detailed
 ### enable audit
 
 vault audit enable file file_path=/vault/vault-audit.log
+
+### check dr information
+
+vault read -format=json sys/replication/status
