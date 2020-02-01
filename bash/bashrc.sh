@@ -73,8 +73,6 @@ hexop() { cd ~/workspaces/repositories/zippoobbiz.github.io/; git add .; git com
 alias psup='(ps -eo pid,etime,cmd; echo "ps -eo pid,etime,cmd")'
 
 
-# Terraform
-alias t="terraform"
 
 # Docker
 alias d='docker'
@@ -82,6 +80,12 @@ alias dps='docker ps'
 
 
 ## Adconda
+# brew cask install anaconda
+export PATH="/usr/local/anaconda3/bin:$PATH"
+# conda create --name python36 python=3.6
+# conda create --name python27 python=2.7
+# conda remove --name python36 --all
+# conda remove --name python27 --all
 alias ci='conda info --env'
 alias p27='conda activate python27'
 alias p36='conda activate python36'
@@ -94,4 +98,11 @@ alias p='pulumi'
 # GCP
 alias g='gcloud'
 
+# Hashicorp
+
+## Terraform
+alias t="terraform"
+
+## Vault
+alias v="vault"
 
