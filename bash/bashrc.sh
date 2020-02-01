@@ -73,6 +73,12 @@ alias dps='docker ps'
 
 
 ## Adconda
+# brew cask install anaconda
+export PATH="/usr/local/anaconda3/bin:$PATH"
+# conda create --name python36 python=3.6
+# conda create --name python27 python=2.7
+# conda remove --name python36 --all
+# conda remove --name python27 --all
 alias ci='conda info --env'
 alias p27='conda activate python27'
 alias p36='conda activate python36'
@@ -80,6 +86,13 @@ alias p36='conda activate python36'
 alias jn='jupyter notebook'
 
 
+# Hashicorp
+
+## Terraform
+alias t="terraform"
+
+## Vault
+alias v="vault"
 
 help() { 	
 			FILE=~/workspaces/repositories/dotfiles/sample_commands/$1.md
