@@ -12,6 +12,8 @@ alias i="istioctl"
 ## Minikube
 alias m='minikube'
 
+alias k=kubectl
+
 ## helm
 alias h='helm'
 
