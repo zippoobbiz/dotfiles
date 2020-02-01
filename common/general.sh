@@ -1,5 +1,6 @@
 
 alias opdot='vsc ~/workspaces/repositories/dotfiles/'
+alias lazyload='. ~/workspaces/repositories/dotfiles/common/lazyload.sh'
 
 ## git
 alias gb='git branch'
