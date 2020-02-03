@@ -1,6 +1,5 @@
 
 alias opdot='vsc ~/workspaces/repositories/dotfiles/'
-alias lazyload='. ~/workspaces/repositories/dotfiles/common/lazyload.sh'
 
 ## git
 alias gb='git branch'
@@ -58,6 +57,15 @@ help() {
 			FILE=~/workspaces/repositories/dotfiles/sample_commands/$1.md
 			if [ -f "$FILE" ]; then
 			    glow $FILE
+			else 
+			    echo "$FILE does not exist"
+			fi 
+		}
+
+lazyload() { 	
+			FILE=~/workspaces/repositories/dotfiles/common/lazyload/$1.sh
+			if [ -f "$FILE" ]; then
+			    . $FILE
 			else 
 			    echo "$FILE does not exist"
 			fi 

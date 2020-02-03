@@ -1,6 +1,6 @@
 # Vault sample commands
 
-## Namespaces
+############################ Namespaces ############################
 
 ### show namespace list
 
@@ -18,7 +18,7 @@ vault namespace delete ns1
 
 vault namespace lookup ns1
 
-## Secret Engines
+############################ Auth Method ############################
 
 ### show auth list
 
@@ -28,11 +28,21 @@ vault auth list
 
 vault auth enable approle
 
+############################ Secret Engines (KV) ############################
+
 ### enable secrets engine (kv2)
 
 vault secrets enable -version=2 kv
 
-## Policy
+### put KV
+
+vault kv put secret/my-secret my-value=my-value1
+
+### get KV
+
+vault kv get -version=1 secret/my-secret
+
+############################ Policy ############################
 
 ### list policies
 
@@ -42,7 +52,7 @@ vault policy list
 
 vault policy read my-policy
 
-## Audit
+############################ Audit ############################
 
 ### list all audit
 
