@@ -14,7 +14,7 @@ alias findip='wget -qO - http://ipecho.net/plain; echo'
 
 ## folders
 cs() { cd $1 && ls;}
-alias repo='cd ~/workspaces/repositories | ls'
+alias repo='cd ~/workspaces/repositories && ls'
 alias ws='cd ~/workspaces && ls'
 alias sdk='cd ~/sdks && ls'
 alias proj='cd ~/workspaces/projects'
