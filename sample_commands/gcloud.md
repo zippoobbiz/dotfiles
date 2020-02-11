@@ -1,30 +1,30 @@
-# gcloud sample commands
+`gcloud` sample commands
 
-## iam
+# iam
 
-gcloud iam service-accounts list
+- `gcloud iam service-accounts list`           -- list all service account
 
-## auth
+# auth
 
-gcloud auth application-default login
-gcloud auth list
-gcloud auth activate-service-account --key-file
+- `gcloud auth application-default login`                       -- default login
+- `gcloud auth list`                                            -- auth list
+- `gcloud auth activate-service-account --key-file`             -- login with keyfile
 
-## config
+# config
 
-gcloud config list project
-gcloud config set account <account>
-gcloud config set project <project>
-gcloud projects list
+- `gcloud config list project`                      -- list projects
+- `gcloud config set account <account>`             -- set account
+- `gcloud config set project <project>`             -- set project
+- `gcloud projects list`                            -- list projects
 
-## organizations
+# organizations
 
-gcloud organizations list
+- `gcloud organizations list`                       -- list organizations
 
-## compute
+# compute
 
-gcloud compute instances list
+- `gcloud compute instances list`                   -- list compute instances
 
-## container
+# container
 
-gcloud container clusters resize cluster-1 --zone australia-southeast1-a --size <size>
+- `gcloud container clusters resize cluster-1 --zone australia-southeast1-a --size <size>`           -- change the number of containers in the cluster

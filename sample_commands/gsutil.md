@@ -1,33 +1,10 @@
-# gsutil sample commands
+`gsutil` sample commands
 
-### copy
-
-gsutil cp
-
-## delete
-
-gsutil rm
-
-### move
-
-gsutil mv
-
-### list the directory hierarchy
-
-gsutil ls
-
-### make a bucket
-
-gsutil mb
-
-### remove a bucket
-
-gsutil rb
-
-### emulation of Unix utility
-
-gsutil rsync
-
-### access change list
-
-gsutil acl
+- `gsutil cp`           -- copy
+- `gsutil rm`           -- delete
+- `gsutil mv`           -- move
+- `gsutil ls`           -- list the directory hierarchy
+- `gsutil mb`           -- make a bucket
+- `gsutil rb`           -- remove a bucket
+- `gsutil rsync`        -- emulation of Unix utility
+- `gsutil acl`          -- access change list

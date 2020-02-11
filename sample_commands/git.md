@@ -1,19 +1,8 @@
-# Git sample commands
+`git` sample commands
 
-## Basic
+# Basic
 
-### show git origin
-
-git remote -v
-
-### git add remote
-
-git remote add <remote_name> https://remote_address
-
-### git remove remote
-
-git remote rm <remote_name>
-
-### git push to a specific remote
-
-git push <remote_name> <branch_name>
+- `git remote -v`           -- show git origin
+- `git remote add <remote_name> https://remote_address`           -- git add remote
+- `git remote rm <remote_name>`           -- git remove remote
+- `git push <remote_name> <branch_name>`           -- git push to a specific remote
