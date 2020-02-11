@@ -1,5 +1,5 @@
 
-alias opdot='vsc ~/workspaces/repositories/dotfiles/'
+alias opdot='vsc ~/workspaces/repositories/mine/dotfiles/'
 
 ## git
 alias gb='git branch'
@@ -54,7 +54,7 @@ alias p36='conda activate python36'
 alias jn='jupyter notebook'
 
 help() { 	
-			FILE=~/workspaces/repositories/dotfiles/sample_commands/$1.md
+			FILE=~/workspaces/repositories/mine/dotfiles/cheatsheets/$1.md
 			if [ -f "$FILE" ]; then
 			    glow $FILE
 			else 
@@ -63,7 +63,7 @@ help() {
 		}
 
 lazyload() { 	
-			FILE=~/workspaces/repositories/dotfiles/common/lazyload/$1.sh
+			FILE=~/workspaces/repositories/mine/dotfiles/common/lazyload/$1.sh
 			if [ -f "$FILE" ]; then
 			    . $FILE
 			else 
