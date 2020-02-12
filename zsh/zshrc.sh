@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
-export DEFAULT_USER='athityakumar'
+
 TERM=xterm-256color
 ZSH_THEME="powerlevel9k/powerlevel9k"
 plugins=(git git-extras gem bundler osx ruby rvm sudo sublime colorize history history-substring-search last-working-dir compleat zsh-completions zsh-history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
@@ -64,54 +64,12 @@ alias kctx='kubectx'
 alias ktail='kubetail'
 kns() { kubectl config set-context --current --namespace=$1;}
 complete -F __start_kubectl k
-## istio
-alias i="istioctl"
-## Minikube
-alias m='minikube'
-
-# hexo
-nhexo() { cd ~/workspaces/repositories/zippoobbiz.github.io/; hexo new $1;sub .;hexos;}
-alias chexo='cd ~/workspaces/repositories/zippoobbiz.github.io/;vsc .'
-alias hexos='hexo s'
-alias hexog='hexo g'
-alias hexoc='hexo clean'
-alias hexod='hexo d'
-hexop() { cd ~/workspaces/repositories/zippoobbiz.github.io/; git add .; git commit -m "$1"; git push;}
-
-# PS
-alias psup='(ps -eo pid,etime,cmd; echo "ps -eo pid,etime,cmd")'
 
 
 
-# Docker
-alias d='docker'
-alias dps='docker ps'
-
-
-## Adconda
-# brew cask install anaconda
-export PATH="/usr/local/anaconda3/bin:$PATH"
-# conda create --name python36 python=3.6
-# conda create --name python27 python=2.7
-# conda remove --name python36 --all
-# conda remove --name python27 --all
-alias ci='conda info --env'
-alias p27='conda activate python27'
-alias p36='conda activate python36'
-## Jupyter Notebook
-alias jn='jupyter notebook'
-
-# pulumi
-alias p='pulumi'
-
-# GCP
-alias g='gcloud'
-
-# Hashicorp
-
-## Terraform
-alias t="terraform"
-
-## Vault
-alias v="vault"
+# prompt_context() {
+#   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+#     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+#   fi
+# }
 
