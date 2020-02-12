@@ -6,7 +6,10 @@ alias p='pulumi'
 
 # GCP
 alias g='gcloud'
+
+
 alias gat='gatsby'
+
 
 ## istio
 alias i="istioctl"
