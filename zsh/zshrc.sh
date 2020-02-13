@@ -5,7 +5,7 @@
 . ~/workspaces/repositories/dotfiles/common/general.sh
 
 export ZSH=$HOME/.oh-my-zsh
-export DEFAULT_USER='athityakumar'
+
 TERM=xterm-256color
 ZSH_THEME="powerlevel9k/powerlevel9k"
 plugins=(git git-extras gem bundler osx ruby rvm sudo sublime colorize history history-substring-search last-working-dir compleat zsh-completions zsh-history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
@@ -28,3 +28,4 @@ alias edalias='vim ~/.zshrc; . ~/.zshrc;'
 source <(kubectl completion zsh)
 kns() { kubectl config set-context --current --namespace=$1;}
 complete -F __start_kubectl k
+

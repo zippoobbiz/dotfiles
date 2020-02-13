@@ -1,6 +1,8 @@
 
 alias opdot='vsc ~/workspaces/repositories/mine/dotfiles/'
 
+alias openports='(lsof -iTCP -sTCP:LISTEN; echo "lsof -iTCP -sTCP:LISTEN")'
+
 ## git
 alias gb='git branch'
 alias gc='git checkout'

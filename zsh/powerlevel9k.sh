@@ -36,6 +36,7 @@
 # POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%F{blue}\u2570\uf460%F{white} "
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context os_icon ssh root_indicator dir vcs)
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time  status rvm time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
 # ENABLE_CORRECTION="false"
 # HIST_STAMPS="mm/dd/yyyy"
