@@ -1,5 +1,5 @@
 
-alias opdot='vsc ~/workspaces/repositories/dotfiles/'
+alias opdot='vsc ~/workspaces/repositories/mine/dotfiles/'
 
 alias openports='(lsof -iTCP -sTCP:LISTEN; echo "lsof -iTCP -sTCP:LISTEN")'
 
@@ -7,7 +7,7 @@ alias openports='(lsof -iTCP -sTCP:LISTEN; echo "lsof -iTCP -sTCP:LISTEN")'
 alias gb='git branch'
 alias gc='git checkout'
 alias ll='ls -lah'
-alias vsc='code'
+alias vsc='open -a Visual\ Studio\ Code'
 alias sub='open -a Sublime\ Text'
 alias itj='open -a IntelliJ\ IDEA\ CE'
 alias fd='open -a Finder'
@@ -56,7 +56,7 @@ alias p36='conda activate python36'
 alias jn='jupyter notebook'
 
 help() { 	
-			FILE=~/workspaces/repositories/dotfiles/sample_commands/$1.md
+			FILE=~/workspaces/repositories/mine/dotfiles/cheatsheets/$1.md
 			if [ -f "$FILE" ]; then
 			    glow $FILE
 			else 
@@ -65,7 +65,7 @@ help() {
 		}
 
 lazyload() { 	
-			FILE=~/workspaces/repositories/dotfiles/common/lazyload/$1.sh
+			FILE=~/workspaces/repositories/mine/dotfiles/common/lazyload/$1.sh
 			if [ -f "$FILE" ]; then
 			    . $FILE
 			else 
