@@ -1,8 +1,6 @@
 #. ~/workspaces/repositories/dotfiles/zsh/zshrc.sh
 
-. ~/workspaces/repositories/dotfiles/common/java.sh
-. ~/workspaces/repositories/dotfiles/common/shortcuts.sh
-. ~/workspaces/repositories/dotfiles/common/general.sh
+
 
 export ZSH=$HOME/.oh-my-zsh
 
@@ -29,3 +27,7 @@ source <(kubectl completion zsh)
 kns() { kubectl config set-context --current --namespace=$1;}
 complete -F __start_kubectl k
 
+
+. ~/workspaces/repositories/dotfiles/common/java.sh
+. ~/workspaces/repositories/dotfiles/common/shortcuts.sh
+. ~/workspaces/repositories/dotfiles/common/general.sh
