@@ -1,8 +1,8 @@
-#. ~/workspaces/repositories/dotfiles/zsh/zshrc.sh
+#. ~/workspaces/repositories/mine/dotfiles/zsh/zshrc.sh
 
-. ~/workspaces/repositories/dotfiles/common/java.sh
-. ~/workspaces/repositories/dotfiles/common/shortcuts.sh
-. ~/workspaces/repositories/dotfiles/common/general.sh
+. ~/workspaces/repositories/mine/dotfiles/common/java.sh
+. ~/workspaces/repositories/mine/dotfiles/common/shortcuts.sh
+. ~/workspaces/repositories/mine/dotfiles/common/general.sh
 
 export ZSH=$HOME/.oh-my-zsh
 
@@ -13,8 +13,12 @@ autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
 
-# iTerm2
-export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"'
+# iTerm2 - Tab shows current directory
+DISABLE_AUTO_TITLE="true"
+precmd() {
+  # sets the tab title to current dir
+  echo -ne "\e]1;${PWD##*/}\a"
+}
 
 # general
 alias opalias='sub ~/.zshrc'
