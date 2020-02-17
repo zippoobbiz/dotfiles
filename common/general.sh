@@ -45,7 +45,11 @@ hexop() { cd ~/workspaces/repositories/zippoobbiz.github.io/; git add .; git com
 # PS
 alias psup='(ps -eo pid,etime,cmd; echo "ps -eo pid,etime,cmd")'
 
+# Docker
 alias dps='docker ps'
+alias dpsa='docker ps -a'
+alias di='docker images'
+alias dir='docker image rm'
 
 
 alias ci='conda info --env'
