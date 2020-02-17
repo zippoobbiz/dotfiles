@@ -1,5 +1,10 @@
 
 alias opdot='vsc ~/workspaces/repositories/mine/dotfiles/'
+alias opzsh='sub ~/.zshrc'
+alias rezsh='. ~/.zshrc'
+alias opbash='sub ~/.bash_profile'
+alias rebash='. ~/.bash_profile'
+
 
 alias openports='(lsof -iTCP -sTCP:LISTEN; echo "lsof -iTCP -sTCP:LISTEN")'
 
@@ -42,13 +47,7 @@ alias psup='(ps -eo pid,etime,cmd; echo "ps -eo pid,etime,cmd")'
 
 alias dps='docker ps'
 
-## Adconda
-# brew cask install anaconda
-export PATH="/usr/local/anaconda3/bin:$PATH"
-# conda create --name python36 python=3.6
-# conda create --name python27 python=2.7
-# conda remove --name python36 --all
-# conda remove --name python27 --all
+
 alias ci='conda info --env'
 alias p27='conda activate python27'
 alias p36='conda activate python36'

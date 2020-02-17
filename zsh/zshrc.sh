@@ -1,8 +1,6 @@
 #. ~/workspaces/repositories/mine/dotfiles/zsh/zshrc.sh
 
-. ~/workspaces/repositories/mine/dotfiles/common/java.sh
-. ~/workspaces/repositories/mine/dotfiles/common/shortcuts.sh
-. ~/workspaces/repositories/mine/dotfiles/common/general.sh
+
 
 export ZSH=$HOME/.oh-my-zsh
 
@@ -20,11 +18,7 @@ precmd() {
   echo -ne "\e]1;${PWD##*/}\a"
 }
 
-# general
-alias opalias='sub ~/.zshrc'
-alias realias='. ~/.zshrc'
-alias redot='. ~/workspaces/repositories/dotfiles/zsh/zshrc.sh'
-alias edalias='vim ~/.zshrc; . ~/.zshrc;'
+alias redot='. ~/workspaces/repositories/mine/dotfiles/zsh/zshrc.sh'
 
 
 
@@ -33,3 +27,7 @@ source <(kubectl completion zsh)
 kns() { kubectl config set-context --current --namespace=$1;}
 complete -F __start_kubectl k
 
+. ~/workspaces/repositories/mine/dotfiles/zsh/powerlevel9k.sh
+. ~/workspaces/repositories/mine/dotfiles/common/java.sh
+. ~/workspaces/repositories/mine/dotfiles/common/shortcuts.sh
+. ~/workspaces/repositories/mine/dotfiles/common/general.sh
