@@ -19,7 +19,7 @@ precmd() {
 # general
 alias opalias='sub ~/.zshrc'
 alias realias='. ~/.zshrc'
-alias redot='. ~/workspaces/repositories/dotfiles/zsh/zshrc.sh'
+alias redot='. ~/workspaces/repositories/mine/dotfiles/zsh/zshrc.sh'
 alias edalias='vim ~/.zshrc; . ~/.zshrc;'
 
 
@@ -30,6 +30,6 @@ kns() { kubectl config set-context --current --namespace=$1;}
 complete -F __start_kubectl k
 
 
-. ~/workspaces/repositories/dotfiles/common/java.sh
-. ~/workspaces/repositories/dotfiles/common/shortcuts.sh
-. ~/workspaces/repositories/dotfiles/common/general.sh
+. ~/workspaces/repositories/mine/dotfiles/common/java.sh
+. ~/workspaces/repositories/mine/dotfiles/common/shortcuts.sh
+. ~/workspaces/repositories/mine/dotfiles/common/general.sh
