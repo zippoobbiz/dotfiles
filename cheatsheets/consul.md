@@ -1,0 +1,4 @@
+- `consul members`
+- `consul info`
+- `consul operator raft list-peers`         Find leader
+- ``

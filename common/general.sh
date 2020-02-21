@@ -4,6 +4,7 @@ alias opzsh='sub ~/.zshrc'
 alias rezsh='. ~/.zshrc'
 alias opbash='sub ~/.bash_profile'
 alias rebash='. ~/.bash_profile'
+alias opssh='sub ~/.ssh/config'
 
 
 alias openports='(lsof -iTCP -sTCP:LISTEN; echo "lsof -iTCP -sTCP:LISTEN")'
