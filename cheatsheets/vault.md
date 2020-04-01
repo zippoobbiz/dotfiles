@@ -34,3 +34,8 @@
 # General
 
 - `v kv list -output-curl-string /kv`                                   -- dry run
+
+
+# Help
+
+- `vault path-help x`

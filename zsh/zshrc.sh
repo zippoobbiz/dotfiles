@@ -5,7 +5,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 TERM=xterm-256color
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git git-extras gem bundler osx ruby rvm sudo sublime colorize history history-substring-search last-working-dir compleat zsh-completions zsh-history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
 autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
