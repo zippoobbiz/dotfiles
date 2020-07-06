@@ -39,3 +39,9 @@
 # Help
 
 - `vault path-help x`
+
+
+# Special operations
+
+- `vault list /auth/token/accessors`
+- `vault token lookup -accessor <token-accessor>`
