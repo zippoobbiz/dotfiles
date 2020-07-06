@@ -17,6 +17,10 @@ The most common `Linux` commands
 - `nc -v target.ip.address targetport`
 - `dig`
 
+## Find open ports
+
+- `sudo netstat -tulpn | grep 6443`
+
 Display routing table
 
 - `route -n`
