@@ -5,6 +5,7 @@ alias rezsh='. ~/.zshrc'
 alias opbash='sub ~/.bash_profile'
 alias rebash='. ~/.bash_profile'
 
+alias keyadd='ssh-add -K ~/.ssh/id_rsa'
 
 alias openports='(lsof -iTCP -sTCP:LISTEN; echo "lsof -iTCP -sTCP:LISTEN")'
 
@@ -75,3 +76,9 @@ lazyload() {
 			    echo "$FILE does not exist"
 			fi 
 		}
+
+pman () 
+{ 
+    man -t "$@" | open -f -a Preview
+}
+complete -c pman
