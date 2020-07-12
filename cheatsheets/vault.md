@@ -1,5 +1,10 @@
 `Vault` sample commands
 
+# init
+- `vault operator init -key-shares=5 -key-threshold=3 -format=json > cluster-keys.json`
+- `cat cluster-keys.json | jq -r ".unseal_keys_b64[]"`
+- `cat cluster-keys.sjon | jq -r ".root_token"`
+
 # Namespaces
 
 - `vault namespace list`                 -- show namespace list
