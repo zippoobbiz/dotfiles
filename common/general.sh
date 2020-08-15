@@ -5,7 +5,7 @@ alias rezsh='. ~/.zshrc'
 alias opbash='sub ~/.bash_profile'
 alias rebash='. ~/.bash_profile'
 alias opssh='sub ~/.ssh/config'
-
+alias certinfo='openssl x509 -noout -text -in'
 
 alias openports='(lsof -iTCP -sTCP:LISTEN; echo "lsof -iTCP -sTCP:LISTEN")'
 
