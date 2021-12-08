@@ -1,11 +1,11 @@
 
-alias opdot='vsc ~/workspaces/repositories/mine/dotfiles/'
+alias opdot='vsc ~/Workspaces/repositories/mine/dotfiles/'
 
 ## git
 alias gb='git branch'
 alias gc='git checkout'
 alias ll='ls -lah'
-alias vsc='code'
+alias vsc='open -a Visual\ Studio\ Code'
 alias sub='open -a Sublime\ Text'
 alias itj='open -a IntelliJ\ IDEA\ CE'
 alias fd='open -a Finder'
@@ -14,10 +14,10 @@ alias findip='wget -qO - http://ipecho.net/plain; echo'
 
 ## folders
 cs() { cd $1 && ls;}
-alias repo='cd ~/workspaces/repositories && ls'
-alias ws='cd ~/workspaces && ls'
+alias repo='cd ~/Workspaces/repositories && ls'
+alias ws='cd ~/Workspaces && ls'
 alias sdk='cd ~/sdks && ls'
-alias proj='cd ~/workspaces/projects'
+alias proj='cd ~/Workspaces/projects'
 alias documents='cd ~/Documents && ls -Art | tail -n 10'
 alias downloads='cd ~/Downloads && ls -Art | tail -n 10'
 
@@ -27,13 +27,13 @@ alias ktail='kubetail'
 
 
 # hexo
-nhexo() { cd ~/workspaces/repositories/zippoobbiz.github.io/; hexo new $1;sub .;hexos;}
-alias chexo='cd ~/workspaces/repositories/zippoobbiz.github.io/;vsc .'
+nhexo() { cd ~/Workspaces/repositories/zippoobbiz.github.io/; hexo new $1;sub .;hexos;}
+alias chexo='cd ~/Workspaces/repositories/zippoobbiz.github.io/;vsc .'
 alias hexos='hexo s'
 alias hexog='hexo g'
 alias hexoc='hexo clean'
 alias hexod='hexo d'
-hexop() { cd ~/workspaces/repositories/zippoobbiz.github.io/; git add .; git commit -m "$1"; git push;}
+hexop() { cd ~/Workspaces/repositories/zippoobbiz.github.io/; git add .; git commit -m "$1"; git push;}
 
 # PS
 alias psup='(ps -eo pid,etime,cmd; echo "ps -eo pid,etime,cmd")'
@@ -54,7 +54,7 @@ alias p36='conda activate python36'
 alias jn='jupyter notebook'
 
 help() { 	
-			FILE=~/workspaces/repositories/mine/dotfiles/cheatsheets/$1.md
+			FILE=~/Workspaces/repositories/mine/dotfiles/cheatsheets/$1.md
 			if [ -f "$FILE" ]; then
 			    glow $FILE
 			else 
@@ -63,7 +63,7 @@ help() {
 		}
 
 lazyload() { 	
-			FILE=~/workspaces/repositories/mine/dotfiles/common/lazyload/$1.sh
+			FILE=~/Workspaces/repositories/mine/dotfiles/common/lazyload/$1.sh
 			if [ -f "$FILE" ]; then
 			    . $FILE
 			else 
