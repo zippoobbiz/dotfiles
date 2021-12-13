@@ -11,6 +11,7 @@ alias itj='open -a IntelliJ\ IDEA\ CE'
 alias fd='open -a Finder'
 killpid() { kill -9 `ps -ef | grep ssh | grep $1 | awk '{print $2}'` ;}
 alias findip='wget -qO - http://ipecho.net/plain; echo'
+alias gitsign='export GPG_TTY=$(tty) && git commit --amend --no-edit -S'
 
 ## folders
 cs() { cd $1 && ls;}
