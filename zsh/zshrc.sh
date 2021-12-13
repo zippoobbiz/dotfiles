@@ -1,14 +1,18 @@
-#. ~/workspaces/repositories/dotfiles/zsh/zshrc.sh
+#. ~/Workspaces/repositories/mine/dotfiles/zsh/zshrc.sh
+#git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-. ~/workspaces/repositories/dotfiles/common/java.sh
-. ~/workspaces/repositories/dotfiles/common/shortcuts.sh
-. ~/workspaces/repositories/dotfiles/common/general.sh
+
+. ~/Workspaces/repositories/mine/dotfiles/common/java.sh
+. ~/Workspaces/repositories/mine/dotfiles/common/shortcuts.sh
+. ~/Workspaces/repositories/mine/dotfiles/common/general.sh
+. ~/Workspaces/repositories/mine/dotfiles/common/python.sh
+. ~/Workspaces/repositories/mine/dotfiles/common/gcloud.sh
 
 export ZSH=$HOME/.oh-my-zsh
-export DEFAULT_USER='athityakumar'
-TERM=xterm-256color
-ZSH_THEME="powerlevel9k/powerlevel9k"
-plugins=(git git-extras gem bundler osx ruby rvm sudo sublime colorize history history-substring-search last-working-dir compleat zsh-completions zsh-history-substring-search zsh-autosuggestions zsh-syntax-highlighting)
+# TERM=xterm-256color
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(git git-extras gem bundler osx ruby rvm sudo sublime colorize history history-substring-search compleat zsh-completions zsh-history-substring-search zsh-autosuggestions zsh-syntax-highlighting last-working-dir)
+#  
 autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
@@ -19,7 +23,7 @@ export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"'
 # general
 alias opalias='sub ~/.zshrc'
 alias realias='. ~/.zshrc'
-alias redot='. ~/workspaces/repositories/dotfiles/zsh/zshrc.sh'
+alias redot='. ~/Workspaces/repositories/mine/dotfiles/zsh/zshrc.sh'
 alias edalias='vim ~/.zshrc; . ~/.zshrc;'
 
 

@@ -3,9 +3,9 @@ alias opdot='vsc ~/workspaces/repositories/mine/dotfiles/'
 
 ## git
 alias gb='git branch'
-alias gc='git checkout'
+alias gck='git checkout'
 alias ll='ls -lah'
-alias vsc='code'
+alias vsc='open -a Visual\ Studio\ Code'
 alias sub='open -a Sublime\ Text'
 alias itj='open -a IntelliJ\ IDEA\ CE'
 alias fd='open -a Finder'
@@ -20,6 +20,13 @@ alias sdk='cd ~/sdks && ls'
 alias proj='cd ~/workspaces/projects'
 alias documents='cd ~/Documents && ls -Art | tail -n 10'
 alias downloads='cd ~/Downloads && ls -Art | tail -n 10'
+alias auspost='cd ~/workspaces/repositories/auspost/im-delivery && ls'
+alias gitlab='cd ~/workspaces/repositories/auspost/im-delivery/gitlab && ls'
+alias imdev='cd ~/workspaces/repositories/auspost/im-delivery/dev && ls'
+alias imtest='cd ~/workspaces/repositories/auspost/im-delivery/test && ls'
+alias entcom='cd ~/workspaces/repositories/auspost/im-delivery/ent-common && ls'
+alias pjzone='cd ~/workspaces/repositories/auspost/im-delivery/projectzone && ls'
+alias deploym='cd ~/workspaces/repositories/auspost/im-delivery/deploymentmanager && ls'
 
 #kubeneters
 alias kctx='kubectx'
@@ -70,3 +77,8 @@ lazyload() {
 			    echo "$FILE does not exist"
 			fi 
 		}
+
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}

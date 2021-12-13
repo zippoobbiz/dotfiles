@@ -1,0 +1,1 @@
+alias gai='gcloud alpha interactive'

@@ -28,3 +28,6 @@
 # container
 
 - `gcloud container clusters resize cluster-1 --zone australia-southeast1-a --size <size>`           -- change the number of containers in the cluster
+
+
+gcloud iam roles describe roles/dataflow.worker

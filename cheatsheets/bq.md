@@ -1,0 +1,1 @@
+bq show --format json im-dev-219022:transform_layer.POSLOG_CDW_TFM
